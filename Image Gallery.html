@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Image Gallery</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Css/Gallery.css">
+    <link rel="stylesheet" href="../Css/css_lumino.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <img src="LOGO/Lumino Logo.png" alt="logo">
+          <ul class="menu">
+            <li><a href="Home/lumino_home.html">Home</a></li>
+            <li><a href="SiteMap.html">SiteMap</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="cw web d/Quiz/QUIZ.html">Quiz</a></li>
+            <li><a href="VSCODE/Buy products/Buycart.html">BuyProducts</a></li>
+            <li><a href="Comments/lumino_comments.html">Comments</a></li>
+            <li><a href="cw web d/Stdetails/stdeails.html">AboutUs</a></li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <div class="image-button1">
+        <button><a href="cw web d/AdP/AdP.html">Fashion photography</a></button>
+      </div>
+
+      <div class="image-button2">
+        <button><a href="VSCODE/Additional web page/AdditionalWeb page.html">Wedding photography</a></button>
+      </div>
+
+      <div class="dropdown-container">
+        <label for="background-color">Background Color:</label>
+        <select id="background-color">
+          <option value="#f8f9fa">Default</option>
+          <option value="#E6E6FA">Lavender</option>
+          <option value="powderblue">Powder Blue</option>
+          <option value="gray">Gray</option>
+          <option value="#00FFFF">Aqua</option>
+        </select>
+
+        <label for="font-size">Font Size:</label>
+        <select id="font-size">
+          <option value="18px">Default</option>
+          <option value="10px">Small</option>
+          <option value="20px">Medium</option>
+          <option value="30px">Large</option>
+        </select>
+      </div>
+
+      <h1 id="top">Image Gallery</h1>
+
+      <div class="button-group">
+        <div class="image-button">
+            <button><a href="Nature.html">Nature</a></button>
+        </div>
+        <div class="image-button">
+            <button><a href="Abstract.html">Abstract</a></button>
+        </div>
+        <div class="image-button">
+            <button><a href="Wedding.html">Wedding</a></button>
+        </div>
+        <div class="image-button">
+            <button><a href="Fashion.html">Fashion</a></button>
+        </div>
+      </div>
+
+      <!--Image Slider-->
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img src="Img/Fashion3.jpg" id="lastClone" alt="">
+          <img src="Img/Nature1.jpg" alt="">
+          <img src="Img/Nature2.jpg" alt="">
+          <img src="Img/Nature3.jpg" alt="">
+          <img src="Img/Abstract1.jpg" alt="">
+          <img src="Img/Abstract2.jpg" alt="">
+          <img src="Img/Abstract3.jpg" alt="">
+          <img src="Img/Wedding1.jpg" alt="">
+          <img src="Img/Wedding2.jpg" alt="">
+          <img src="Img/Wedding3.jpg" alt="">
+          <img src="Img/Fashion1.jpg" alt="">
+          <img src="Img/Fashion2.jpg" alt="">
+          <img src="Img/Fashion3.jpg" alt="">
+          <img src="Img/Nature1.jpg" id="firstClone" alt="">
+        </div>
+      </div>
+
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
+      <script src="Gallery.js"></script>
+
+      <a href="#top" class="back-to-top">
+        <img src="Back_to_top.png" alt="Arrow">
+      </a>
+
+
+      <div class="footer">
+        <div class="col-1">
+          <div class="logo_pad">
+            <img src="Footer_components/Branding.svg" alt="Lumino_logo_footer">
+          </div>
+        </div>
+        <div class="col-2">
+            <a href="Home/lumino_home.html">Home</a>
+            <a href="cw web d/Quiz/QUIZ.html">Quiz</a>
+            <a href="page editor/page editor.html">Editor Page</a>
+            <a href="cw web d/Stdetails/stdeails.html">AboutUs</a>
+        </div>
+        <div class="col-3">
+          <div class="icons">
+            <a href="#"><img src="D:/WD CW/VS Code/Code/Footer_components/icon _youtube_.svg" alt="youtube"></a>
+            <a href="#"><img src="D:/WD CW/VS Code/Code/Footer_components/icon _instagram_.svg" alt="instagram"></a>
+            <a href="#"><img src="D:/WD CW/VS Code/Code/Footer_components/icon _facebook_.svg" alt="facebook"></a>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>    
