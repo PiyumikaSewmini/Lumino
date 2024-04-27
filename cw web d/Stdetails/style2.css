@@ -1,0 +1,328 @@
+@font-face {
+    font-family: 'CooperHewitt-Thin';
+    src: url(/Fonts/CooperHewitt-Thin.ttf);
+  }
+  
+  @font-face {
+    font-family: 'CooperHewitt-Book';
+    src: url(/Fonts/CooperHewitt-Book.ttf);
+  }
+  
+  @font-face {
+    font-family: 'CooperHewitt-Medium';
+    src: url(/Fonts/CooperHewitt-Medium.ttf);
+  }
+
+
+  html {
+    font-family: CooperHewitt-Book, sans-serif;
+  }
+  
+  body {
+    background-image: url('IMG_5138.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Ensure the background image covers the entire viewport  */
+    background-position: center;
+} 
+
+  .logo {
+    width: 100px;
+    height: 80px;
+    float: left;
+    margin-left:300px;
+    margin-top:2px;
+    display: flex;
+  }
+  
+  .logo img{
+    width:140px;
+    height:30px;
+    position:absolute;
+    top:32px;
+    left:40px;
+  }
+  
+  /* header {
+    font-family: CooperHewitt-Book, sans-serif;
+    font-size: 5px;
+  } */
+  
+  nav {
+    background: #212529;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  nav ul{
+    list-style-type: none;
+    display: flex;
+    float: right;
+    padding: 0px 624px 0px 450px;
+    align-items:center;
+    margin-left:-120px;
+  }
+  
+  nav li {
+    display: flex;
+    font-size: auto;
+    margin-right: 42px;
+    float: right;
+  }
+  
+  
+  nav a {
+    float: right;
+    padding: 12px;
+    color: #f8f9fa;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  nav a:hover {
+    background-color: none;
+    text-underline-position:auto;
+    text-decoration: underline;
+  }
+
+
+/* Title */
+h1.heading {
+  color: rgb(119, 118, 118) ;
+  text-align: center ;
+  text-shadow: 2px 2px 0px rgb(0, 0, 0);
+  font-size: 70px;
+  letter-spacing: 10px;
+  }
+ /* h3.heading{
+
+    color:white;
+    text-decoration: underline;
+    text-shadow: 1px 1px 0px #202020;
+    text-align:center;
+    top: 75px;
+    position: relative;
+    font-size:20px;
+    width:100%;
+    letter-spacing:.2rem;
+  } */
+  
+/* header {
+
+	width: 10px;
+	text-align: justify;
+} */
+
+.student_dtails{
+	  color:white;
+	  text-align: center;
+	 
+  }
+ /* .student{ 
+  position:relative;
+	  left: -10px;
+	  top:5px;
+ } */
+
+
+  .members{
+       height: 50px;
+       width:100%;
+       display: grid;
+       grid-template-columns: 50% 50%;
+  }
+  
+
+
+/* Student 1 */
+  .student1{
+    width: 365px;
+    height: 400px;
+    position: absolute;
+	  left:0px;
+	  top:600px;
+    cursor: pointer;
+    padding-left: 100px;
+  }
+  .student1:hover .Piyumika{
+    height: 300px;
+    max-width: 225px;
+    margin-bottom:100px;
+
+  }
+  .student1 img {
+    display: block;
+    width: 225px;
+    height: 300px;
+  }
+  .Piyumika{
+    width: 66%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.268),rgba(41, 40, 41, 0.658),rgba(48, 46, 46, 0.866),rgb(97, 93, 93));
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.7s ease;
+  }
+  .Piyumika h2{
+    color:white;
+    font-size: 20px; 
+    padding: 10px 10px;
+	position:absolute;
+	top:140px;
+	text-align:center;
+  }
+
+/* Student 2 */
+  .student2{
+    width: 365px;
+    height: 400px;
+    position: absolute;
+	  left:350px;
+	  top:600px;
+    cursor: pointer;
+    padding-left: 90px;
+  }
+  .student2:hover .Aroshana{
+    height: 300px;
+    max-width: 225px;
+    margin-bottom:100px;
+  }
+  .student2 img {
+    display: block;
+    width: 225px;
+    height: 300px;
+  }
+  .Aroshana{
+    width: 66%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.268),rgba(41, 40, 41, 0.658),rgba(48, 46, 46, 0.866),rgb(97, 93, 93));
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.7s ease;
+  }
+  .Aroshana h2{
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px;
+    position:absolute;
+    top:140px;
+    text-align:center;
+  }
+
+
+/* Student 3 */
+  .student3{
+    width: 365px;
+    height: 400px;
+    position: absolute;
+    left:700px;
+	  top:600px;
+    cursor: pointer;
+    padding-left: 90px;
+  }
+  .student3:hover .Dulmini{
+    height: 300px;
+    max-width: 225px;
+    margin-bottom:100px;
+  }
+  .student3 img {
+    display: block;
+    width: 225px;
+    height: 300px;
+  
+  }
+  .Dulmini{
+    width: 66%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.268),rgba(41, 40, 41, 0.658),rgba(48, 46, 46, 0.866),rgb(97, 93, 93));
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.7s ease;
+  }
+  .Dulmini h2{
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px;
+    position:absolute;
+    top:140px;
+    text-align:center;
+  }
+
+
+/* Student 4 */
+  .student4{
+    width: 365px;
+    height: 400px;
+    position: absolute;
+    left:1050px;
+    top:600px;
+    cursor: pointer;
+    padding-left: 90px;
+  }
+  .student4:hover .Sarah{
+    height: 300px;
+    max-width: 225px;
+    margin-bottom:100px;
+  }
+  .student4 img {
+    display: block;
+    width: 225px;
+    height: 300px;
+    
+  }
+  .Sarah{
+    width: 66%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.268),rgba(41, 40, 41, 0.658),rgba(48, 46, 46, 0.866),rgb(97, 93, 93));
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.7s ease;
+  }
+  .Sarah h2{
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px;
+    position:absolute;
+    top:140px;
+    text-align:center;
+  }
+
+  .back-to-top {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+  }
+  
+  .back-to-top img {
+    width:40px;
+    height:40px;
+    z-index:1000;
+  }
+  
+  
+
+  
+
