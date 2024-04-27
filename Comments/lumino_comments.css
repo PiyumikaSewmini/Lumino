@@ -1,0 +1,282 @@
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  @font-face {
+    font-family: 'CooperHewitt-Thin';
+    src: url("/Users/aroshanakalhara/Documents/Software Engineering/WEB/CW/VS Code/Fonts/CooperHewitt-Thin.ttf");
+  }
+  
+  @font-face {
+    font-family: 'CooperHewitt-Light';
+    src: url("/Users/aroshanakalhara/Documents/Software Engineering/WEB/CW/VS Code/Fonts/CooperHewitt-Light.ttf");
+  }
+  
+  @font-face {
+    font-family: 'CooperHewitt-Book';
+    src: url("/Users/aroshanakalhara/Documents/Software Engineering/WEB/CW/VS Code/Fonts/CooperHewitt-Book.ttf");
+  }
+  
+  @font-face {
+    font-family: 'CooperHewitt-Medium';
+    src: url("/Users/aroshanakalhara/Documents/Software Engineering/WEB/CW/VS Code/Fonts/CooperHewitt-Medium.ttf");
+  }
+    
+  
+  .logo {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 5%;
+  }
+
+  .logo img{
+    width:140px;
+    height:30px;
+    position:absolute;
+    top:0;
+    left:40px;
+  }
+
+  
+  header {
+    font-family: CooperHewitt-Thin, sans-serif;
+    font-size: 105%;
+  }
+  
+  nav {
+    background: #212529;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    float: right;
+    margin-top: 1%;
+    margin-left: 40%;
+  }
+  
+  nav li {
+    display: flex;
+    font-size: 105%;
+    margin-top: 1.2%;
+    margin-right: 10%;
+    float: right;
+  }
+  
+  
+  nav a {
+    float: auto;
+    display: flex;
+    color: #f8f9fa;
+    position: relative;
+    text-decoration: none;
+    font-size: auto;
+  }
+  
+  nav a:hover {
+    background-color: none;
+  }
+  
+  nav a::after {
+    content: '';
+    height: 0.5%;
+    width: 100%;
+    background: #f8f9fa;
+    position: absolute;
+    left: 0%;
+    bottom: -8%;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+  }
+  
+  nav a:hover::after {
+    opacity: 1;
+  }
+
+  body {
+    background-color: #f8f9fa;
+    background-image: url("C:\\Users\\Piyumika Thennakoon\\Desktop\\HTML coursework\\WD CW\\WD CW\\VS Code\\Code\\Comments\\BG_components\\pexels-sam-kolder-2387870.jpg");
+    background-size: cover;
+    margin: auto;
+    background-repeat: no-repeat;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: CooperHewitt-Thin, sans-serif;
+
+  }
+
+  body div.transparent_box {
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  height: 90%;
+  padding: 20px;
+  position: absolute;
+  background-color: #212529;
+  color: #f8f9fa;
+  opacity: 0.6;
+  border-radius: 5px;
+  max-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  }
+
+  div.transparent_box h1{
+    text-align: center;
+    font-family: CooperHewitt-Thin, sans-serif;
+    color: #f8f9fa;
+    margin-top: 3%;
+  }
+
+  div.transparent_box form{
+    text-align: center;
+    font-family: CooperHewitt-Thin, sans-serif;
+    color: #f8f9fa;
+    margin-top: 3%;
+  }
+
+  .com1{
+    border-style: none;
+    border-radius: 12px;
+    padding: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #f8f9fa;
+    color: #212529;
+    justify-content: center;
+    text-align: center;
+  }
+
+  
+  div .com1 .radio{
+    text-align: center;
+    color: #212529;
+    display: flex;
+    justify-content: center;
+  }
+
+  div .com1 label{
+    margin: 1%;
+  }
+
+  .com2{
+    border-style: none;
+    border-radius: 12px;
+    padding: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    background-color: #f8f9fa;
+    color: #212529;
+    justify-content: center;
+    text-align: center;
+  }
+
+    .com3{
+    border-style: none;
+    border-radius: 12px;
+    padding: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    background-color: #f8f9fa;
+    color: #212529;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .submit {
+  background: #fff;
+  margin-top: 2%;
+  width: 10%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 100%;
+  border-radius: 10px;
+  padding: 0.6%;
+  align-items: center;
+
+}
+
+
+  .footer{
+    background: #212529;
+    color: #f8f9fa;
+    margin-top: 60%;
+    width: 100%;
+    height: 150px;
+    display: flex;
+  }
+
+  .footer a{
+    font-family: CooperHewitt-Thin, sans-serif;
+    color: #f8f9fa;
+    margin: 5%;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .footer div{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    z-index: 1;
+  }
+
+  .col-1{
+    flex-grow: 1;
+  }
+
+  .col-2{
+    flex-grow: 2;
+  }
+
+  .col-3{
+    flex-grow: 1;
+  }
+
+  .footer a::after {
+    content: '';
+    height: 0.5%;
+    width: 100%;
+    background: #f8f9fa;
+    position: absolute;
+    left: 0%;
+    bottom: -8%;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+  }
+  
+  .footer a:hover::after {
+    opacity: 1;
+  }
+
+  .back-to-top {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+  }
+  
+  .back-to-top img {
+    width:40px;
+    height:40px;
+    z-index:1000;
+  }
+  

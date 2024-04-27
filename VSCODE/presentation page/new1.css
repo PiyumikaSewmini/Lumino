@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'CooperHewitt-Thin';
+    src: url("../Fonts/CooperHewitt-Thin.ttf");
+  }
+  
+  @font-face {
+    font-family: 'CooperHewitt-Book';
+    src: url("../Fonts/CooperHewitt-Book.ttf");
+  }
+  
+  @font-face {
+    font-family: 'CooperHewitt-Medium';
+    src: url("../Fonts/CooperHewitt-Medium.ttf");
+  }
+body {
+    background-image: url(firstpageImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin:0;
+    padding: 50px 0 0;
+    height: 100%;
+    width: 100%;
+    
+     }
+html{
+    height: 100%;
+    width: 100%;
+}  
+*{
+    box-sizing: border-box;
+} 
+.firstpara{
+    color: #F8F9FA;
+    font-family: CooperHewitt-Thin, sans-a;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    top: 180px;
+    left: 130px;
+       
+}
+p{
+    color: #F8F9FA;
+    text-align: justify;
+    font-size: 17px;
+    font-family: CooperHewitt-Medium, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    display: inline-block;
+    height: 1.2em;
+    width: 800px; 
+    position: relative;
+    top: 185px;
+    left: 130px; 
+  
+  
+}
+.names{
+    color: #FFF;
+    font-family: Avenir Next Condensed;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    position: absolute;
+    top: 475px;
+    left: 180px;
+    
+    
+}
+.logo{
+  position: absolute;
+  top: 120px;
+  left: 130px;
+    
+}
+
+
+    

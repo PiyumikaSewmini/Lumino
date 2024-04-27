@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+  <meta charset="UTF-8">
+  <title>Buy Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossoringin="anonymous"></script>
+  <link href="Buyproduct.css" rel="stylesheet">
+
+
+
+<body>
+  <video id="bgVideo" autoplay loop muted>
+    <source src="C:\Users\Piyumika Thennakoon\Desktop\1 year SE\Courseworks 1 year\HTML coursework\WD CW\WD CW\VS Code\Code\VSCODE\Buy products\Piyumika's Buy Products Page.mp4">
+  </video>
+  <nav>
+    <div class="logo">
+      <a href="#"><img src="Logo.png"></a>
+      <ul class="menu">
+        <li><a href="C:\Users\Piyumika Thennakoon\Desktop\HTML coursework\WD CW\WD CW\VS Code\Code\Home\lumino_home.html">Home</a></li>
+        <li><a href="C:\Users\Piyumika Thennakoon\Desktop\HTML coursework\WD CW\WD CW\VS Code\Code\SiteMap.html">SiteMap</a></li>
+        <li><a href="C:\Users\Piyumika Thennakoon\Desktop\HTML coursework\WD CW\WD CW\VS Code\Code\Image Gallery.html">Gallery</a></li>
+        <li><a href="C:\Users\Piyumika Thennakoon\Desktop\HTML coursework\WD CW\WD CW\VS Code\Code\cw web d\Quiz\QUIZ.html">Quiz</a></li>
+        <li><a href="C:\Users\Piyumika Thennakoon\Desktop\HTML coursework\WD CW\WD CW\VS Code\Code\VSCODE\Buy products\Buycart.html">BuyProducts</a></li>
+        <li><a href="C:\Users\Piyumika Thennakoon\Desktop\HTML coursework\WD CW\WD CW\VS Code\Code\Comments\lumino_comments.html">Comments</a></li>
+        <li><a href="C:\Users\Piyumika Thennakoon\Desktop\HTML coursework\WD CW\WD CW\VS Code\Code\cw web d\Stdetails\stdeails.html">AboutUs</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  
+    <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
+      <p id="count">0</p>
+    </div>
+  </div>
+
+  <div class="container1">
+    <div id="root"></div>
+    <div class="sidebar d-flex">
+      <div class="head">
+        <p>My Cart</p>
+      </div>
+      <div id="cartitem">Your cart is empty</div>
+      <div class="foot">
+        <h3 class="Total">Total</h3>
+        <h2 id="total">$0.00</h2>
+      </div>
+
+      <button onclick="document.getElementById('id01').style.display='block'" class="newbutton">Buy Now</button>
+    </div>
+  </div>
+
+  <div id="id01" class="new_button-modal">
+    <div class="new_button-content">
+      <div class="newbutn-container">
+        <button onclick="document.getElementById('id01').style.display='none'" class="Nb-button">close</button>
+          <div id="responseContainer"></div>
+
+        <form id="cardForm">
+          
+          <label for="cardNumber">Card Number:</label>
+          <input type="text" id="cardNumber" required>
+
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" required>
+
+          <label for="expiryDate">Expiry Date:</label>
+          <input type="text" id="expiryDate" required>
+
+          <label for="cardHolderName">Card Holder Name:</label>
+          <input type="text" id="cardHolderName" required>
+
+          <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+        <p>Thank you.</p>
+        <!-- <button type="button" onclick="downloadJSON()">Download JSON</button> -->
+        
+
+
+      </div>
+    </div>
+  </div>
+  <script>
+    const product = [
+      {
+        id: 0,
+        image: 'nature1.jpg',
+        title: 'Nature-00000111101',
+        price: 15,
+      },
+      {
+        id: 1,
+        image: 'nature2.jpg',
+        title: 'Nature-00000111102',
+        price: 15,
+      },
+      {
+        id: 2,
+        image: 'nature3.jpg',
+        title: 'Nature-00000111103',
+        price: 15,
+      },
+      {
+        id: 3,
+        image: 'nature4.jpg',
+        title: 'Nature-00000111104',
+        price: 15,
+      },
+      {
+        id: 4,
+        image: 'nature5.jpg',
+        title: 'Nature-00000111105',
+        price: 15,
+      },
+      {
+        id: 5,
+        image: 'abstract1.jpg',
+        title: 'Abstract-00000111101',
+        price: 18,
+      },
+      {
+        id: 6,
+        image: 'abstract2.jpg',
+        title: 'Abstract-00000111102',
+        price: 18,
+      },
+      {
+        id: 7,
+        image: 'abstract3.jpg',
+        title: 'Abstract-00000111103',
+        price: 18,
+      },
+      {
+        id: 8,
+        image: 'abstract4.jpg',
+        title: 'Abstract-00000111104',
+        price: 18,
+      },
+
+      {
+        id: 9,
+        image: 'abstract5.jpg',
+        title: 'Abstract-00000111105',
+        price: 18,
+      },
+      {
+        id: 10,
+        image: 'Wedding1.jpg',
+        title: 'Wedding -00000111101',
+        price: 45,
+      },
+      {
+        id: 11,
+        image: 'Wedding2.jpg',
+        title: 'Wedding -00000111102',
+        price: 45,
+      },
+      {
+        id: 12,
+        image: 'Wedding3.jpg',
+        title: 'Wedding -00000111103',
+        price: 45,
+      },
+      {
+        id: 13,
+        image: 'Wedding4.jpg',
+        title: 'Wedding -00000111104',
+        price: 45,
+      },
+      {
+        id: 14,
+        image: 'Wedding5.jpg',
+        title: 'Wedding -00000111105',
+        price: 45,
+      },
+      {
+        id: 15,
+        image: 'Fashion1.jpg',
+        title: 'Fashion-00000111101',
+        price: 40,
+      },
+
+      {
+        id: 16,
+        image: 'Fashion2.jpg',
+        title: 'Fashion-00000111102',
+        price: 40,
+      },
+      {
+        id: 17,
+        image: 'Fashion3.jpg',
+        title: 'Fashion-00000111103',
+        price: 40,
+      },
+      {
+        id: 18,
+        image: 'Fashion4.jpg',
+        title: 'Fashion-00000111104',
+        price: 40,
+      },
+      {
+        id: 19,
+        image: 'Fashion5.jpg',
+        title: 'Fashion-00000111105',
+        price: 40,
+      },
+
+    ];
+
+    let i = 0;
+    document.getElementById('root').innerHTML = product.map((item) => {
+      var { image, title, price } = item;
+      return (
+        `<div class='box'>
+          <div class='img-box'>
+            <img class='images' src=${image} alt=${title}></img>                    
+              </div>
+              <div class='bottom'>
+                <p class='title'>${title}</p>
+                <h2 class='price'>$ ${price}.00</h2>
+              <button onclick='addtocart(${i++})'>Add to cart</button>
+            </div>
+          </div>`
+      );
+    }).join('');
+
+    var cart = [];
+
+    function addtocart(a) {
+      cart.push({ ...product[a] });
+      displaycart();
+    }
+    function delElement(a) {
+      cart.splice(a, 1);
+      displaycart();
+    }
+
+    function displaycart(a) {
+      let j = 0, total = 0;
+      document.getElementById("count").innerHTML = cart.length;
+      if (cart.length === 0) {
+        document.getElementById('cartitem').innerHTML = "Your cart is empty";
+        document.getElementById("total").innerHTML = "$" + 0 + ".00";
+      } else {
+        document.getElementById('cartitem').innerHTML = cart.map((item) => {
+          var { image, title, price } = item;
+          total = total + price;
+          document.getElementById("total").innerHTML = "$" + total + ".00";
+          return (
+            `<div class='cart-item'>
+                <div class='row-img'>
+                 <img class='rowimg' src=${image}>
+                </div>
+              <p style='font-size: 10px;'>${title}</p>
+              <h2 style='font-size: 10px;' >$ ${price}.00</h2>
+              <i class='fa-solid fa-trash' onclick='delElement(${j++})'></i>
+            </div>`
+          );
+        }).join('');
+      }
+    }
+  </script>
+
+  <!-- card details submit -->
+  <script>
+    function submitForm() {
+      const cardNumber = document.getElementById('cardNumber').value;
+      const cvv = document.getElementById('cvv').value;
+      const expiryDate = document.getElementById('expiryDate').value;
+      const cardHolderName = document.getElementById('cardHolderName').value;
+
+      const formData = {
+        cardNumber: cardNumber,
+        cvv: cvv,
+        expiryDate: expiryDate,
+        cardHolderName: cardHolderName
+      };
+
+      const jsonData = JSON.stringify(formData, null, 2);
+
+      const blob = new Blob([jsonData], { type: 'application/json' });
+
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'card_details.json';
+
+      document.body.appendChild(a);
+      a.click();
+
+      URL.revokeObjectURL(url);
+      a.remove();
+    }
+
+    
+  </script>
+
+<script>
+  function handleFormSubmission(event) {
+    event.preventDefault();
+    var responseContainer = document.getElementById('responseContainer');
+    if (responseContainer) {
+      responseContainer.innerHTML = "<p>Your order added to the list.</p><p>Thank you.</p>";
+    }
+  }
+</script>
+<div class="page-editor-link">
+  <a href="C:\Users\Piyumika Thennakoon\Desktop\1 year SE\Courseworks 1 year\HTML coursework\WD CW\WD CW\VS Code\Code\VSCODE\page editor\page editor.html">Page Editor</a>
+</div>
+
+<a href="#" class="back-to-top">
+  <img src="C:\Users\Piyumika Thennakoon\Desktop\1 year SE\Courseworks 1 year\HTML coursework\WD CW\WD CW\VS Code\Code\VSCODE\page editor\page.jpg" alt="Arrow">
+</a> 
+
+</body>
+
+</html>
